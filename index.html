@@ -14,14 +14,32 @@
             let dogsAgeAsNumber = parseInt(dogsAge);
 
             function getHumanAge (dogsAge) {
-                return parseInt(dogsAge) * 7;
+                let result= parseInt(dogsAge) * 7;
+                //if the dogsAge was 0 then result is also 0
+                //then we want to return 'A puppy less than 1'
+                //condition/predicate
+                //other ways to check conditions: < > <= == === != !==
+        
+                if (result==0){
+                    //code here runs when condition above is met
+                    result = "A puppy less than 1 years old";
+                }
+
+                return result;
             }
 
-            let humanAge1 = getHumanAge(dogsAge);
-            let humanAge2 = getHumanAge(23);
-            let humanAge3 = getHumanAge(12);
+            //let humanAge1 = getHumanAge(dogsAge);
+            //let humanAge2 = getHumanAge(23);
+            //let humanAge3 = getHumanAge(12);
+            //let humanAge4 = getHumanAge(0);
 
-            console.log({humanAge1, humanAge2, humanAge3});             
+            //store all of the ages in an Array use square brackets aka a list 
+            let humanAges = [];
+            humanAges.push(getHumanAge(dogsAge));
+            humanAges.push(getHumanAge(23));
+
+            console.log ({humanAges});
+            //console.log({humanAge1, humanAge2, humanAge3, humanAge4});             
 
         </script>
 
