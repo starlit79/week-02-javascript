@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Week 02 JS</title>
+
+        <script>
+            // `var` is old - use `let` instead
+            var currentWeather = 'Beautiful and sunny!';
+            let dogsName = 'Hatrick';
+            const isWeek02 = true;
+            const isWeek01 = false;
+
+            let dogsAge = '11';
+            let dogsAgeAsNumber = parseInt(dogsAge);
+
+            function getHumanAge (dogsAge) {
+                return parseInt(dogsAge) * 7;
+            }
+
+            let humanAge1 = getHumanAge(dogsAge);
+            let humanAge2 = getHumanAge(23);
+            let humanAge3 = getHumanAge(12);
+
+            console.log({humanAge1, humanAge2, humanAge3});             
+
+        </script>
+
+    </head>
+
+    <body>
+        Congrats on getting to week 02!
+    </body>
+
+</html>
